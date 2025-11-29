@@ -62,32 +62,6 @@ export const MainPage = () => {
                     Experiment 1
                   </Button>
                 </Grid>
-                <Grid item xs={8} paddingTop={1}>
-                  <Button
-                    onClick={() => redirectUrl('/experiment2')}
-                    size="large"
-                    sx={{
-                      width: '70%',
-                      backgroundColor: 'lightgray',
-                      margin: '5px',
-                    }}
-                  >
-                    Experiment 2
-                  </Button>
-                </Grid>
-                <Grid item xs={8} paddingTop={1}>
-                  <Button
-                    onClick={() => redirectUrl('/experiment3')}
-                    size="large"
-                    sx={{
-                      width: '70%',
-                      backgroundColor: 'lightgray',
-                      margin: '5px',
-                    }}
-                  >
-                    Experiment 3
-                  </Button>
-                </Grid>
               </Grid>
             </Grid>
           </Card>
