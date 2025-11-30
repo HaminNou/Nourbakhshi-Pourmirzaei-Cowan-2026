@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a React-based web application designed for conducting working memory and imagery experiments. The application was built using Create React App and features a comprehensive experimental interface.
+This is a React-based web application designed for conducting working memory and imagery experiments. The application was built using Create React App and features a comprehensive experimental interface for Experiment 1.
 
 ## Repository
 
@@ -133,9 +133,6 @@ quiz-app-react/
 ## Features
 
 - **Experiment 1**: Main experimental interface (accessible from homepage)
-- Comprehensive experimental modules
-- Binocular vision tasks
-- Memory tasks (V2)
 - Tutorial system
 - Performance feedback
 - Data collection and export
