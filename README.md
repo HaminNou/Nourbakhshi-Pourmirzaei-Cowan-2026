@@ -1,70 +1,235 @@
-# Getting Started with Create React App
+# Working Memory & Imagery Experiment Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+
+This is a React-based web application designed for conducting working memory and imagery experiments. The application was built using Create React App and features a comprehensive experimental interface.
+
+## Repository
+
+GitHub: [https://github.com/HaminNou/Nourbakhshi-Pourmirzaei-Cowan-2026](https://github.com/HaminNou/Nourbakhshi-Pourmirzaei-Cowan-2026)
+
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Node.js** (version 14.0 or higher recommended)
+  - Download from: [https://nodejs.org/](https://nodejs.org/)
+  - To check if installed: `node --version`
+
+- **npm** (comes with Node.js) OR **yarn**
+  - npm to check: `npm --version`
+  - yarn to check: `yarn --version`
+
+---
+
+## Installation Instructions
+
+### Step 1: Extract the Project
+
+If you received this as a ZIP file, extract it to your desired location.
+
+### Step 2: Open Terminal/Command Prompt
+
+Navigate to the project directory:
+
+```bash
+cd quiz-app-react
+```
+
+(Or navigate to wherever you extracted the project)
+
+### Step 3: Install Dependencies
+
+You have two options:
+
+**Option A: Using npm (recommended)**
+```bash
+npm install
+```
+
+**Option B: Using yarn**
+```bash
+yarn install
+```
+
+This will install all required packages listed in `package.json`. The installation may take several minutes.
+
+---
+
+## Running the Application
+
+### Development Mode
+
+After installation is complete, start the development server:
+
+**Using npm:**
+```bash
+npm start
+```
+
+**Using yarn:**
+```bash
+yarn start
+```
+
+The application will automatically:
+- Start the development server
+- Open your default browser to [http://localhost:3000](http://localhost:3000)
+- Enable hot-reload (the page reloads automatically when you make changes)
+
+### Stopping the Server
+
+To stop the development server:
+- Press `Ctrl + C` in the terminal/command prompt
+- Type `Y` when asked to confirm
+
+---
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm start` or `yarn start`
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
-### `yarn start`
+### `npm test` or `yarn test`
+Launches the test runner in interactive watch mode
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm run build` or `yarn build`
+Builds the app for production to the `build` folder
+- Optimized for best performance
+- Minified and ready for deployment
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm run eject` or `yarn eject`
+⚠️ **Warning**: This is a one-way operation. Only use if you need full control over build configuration.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `yarn build`
+```
+quiz-app-react/
+├── public/                 # Static files
+│   ├── index.html         # Main HTML file
+│   └── ...
+├── src/                   # Source code
+│   ├── Components/        # React components
+│   ├── pages/            # Page components
+│   │   └── main/         # Main page (homepage)
+│   ├── assets/           # Images and resources
+│   ├── helpers/          # Utility functions
+│   ├── layouts/          # Layout components
+│   ├── modules/          # Experiment modules
+│   ├── router/           # Routing configuration
+│   ├── App.js            # Main App component
+│   └── index.js          # Entry point
+├── package.json          # Project dependencies
+├── .gitignore           # Git ignore rules
+└── README.md            # This file
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Experiment 1**: Main experimental interface (accessible from homepage)
+- Comprehensive experimental modules
+- Binocular vision tasks
+- Memory tasks (V2)
+- Tutorial system
+- Performance feedback
+- Data collection and export
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technical Details
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built With
+- **React** 17.0.1
+- **React Router** 6.21.2
+- **Material-UI (MUI)** 5.15.4
+- **Redux** 4.0.5
+- **Styled Components** 6.1.8
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Browser Compatibility
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Troubleshooting
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Issue: Port 3000 is already in use
+**Solution**: Either:
+1. Stop the other application using port 3000, or
+2. The app will prompt you to use a different port (press Y)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Issue: Module not found errors
+**Solution**: Delete `node_modules` folder and `package-lock.json`, then run `npm install` again
 
-### Code Splitting
+### Issue: npm install fails
+**Solution**: 
+1. Ensure you have the latest Node.js version
+2. Try clearing npm cache: `npm cache clean --force`
+3. Delete `node_modules` and try again
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Issue: White screen on startup
+**Solution**: 
+1. Check browser console for errors (F12)
+2. Ensure all dependencies installed correctly
+3. Try clearing browser cache
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Important Notes
 
-### Making a Progressive Web App
+⚠️ **Node Modules**: This package does NOT include the `node_modules` folder. You MUST run `npm install` or `yarn install` before running the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+⚠️ **Internet Connection**: An internet connection is required during the initial `npm install` to download dependencies.
 
-### Advanced Configuration
+⚠️ **Development vs Production**: The `npm start` command runs a development server. For production deployment, use `npm run build`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Support & Documentation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **React Documentation**: [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+- **Create React App Documentation**: [https://create-react-app.dev/](https://create-react-app.dev/)
+- **Material-UI Documentation**: [https://mui.com/](https://mui.com/)
 
-### `yarn build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Version
+
+**Version**: 0.1.0
+
+---
+
+## License
+
+This project is private and proprietary.
+
+---
+
+## Quick Start Summary
+
+```bash
+# 1. Navigate to project directory
+cd quiz-app-react
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the application
+npm start
+
+# 4. Open browser to http://localhost:3000
+```
+
+That's it! The application should now be running successfully.
+
+---
+
+*Last Updated: November 2025*
